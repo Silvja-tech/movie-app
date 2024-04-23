@@ -1,0 +1,8 @@
+
+<div class="search-container">
+    <input type="text" class="search-input" [(ngModel)]="searchQuery" placeholder="Search for a movie">
+    <button class="search-button" (click)="search()">Search</button>
+  </div>
+
+
+  <app-movie-listing [top3Movies] ="top3Movies"></app-movie-listing>

@@ -1,0 +1,5 @@
+<div>
+    <div *ngFor="let movie of top3Movies">
+        <img  [src]="movie.Poster" alt="{{ movie.Title }}" routerLink="/movie/{{ movie.imdbID }}">
+    </div>
+</div> 
